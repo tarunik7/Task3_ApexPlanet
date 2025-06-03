@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymBro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <h1>GymBro</h1>
+    <ul>
+      <li>Home</li>
+      <li>Programs</li>
+      <li>Trainers</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <!-- Programs Section -->
+  <section id="programs" class="programs-grid">
+    <div class="program-card">🏋️‍♀️ Strength</div>
+    <div class="program-card">🧘 Yoga</div>
+    <div class="program-card">🏃 Cardio</div>
+    <div class="program-card">🥊 HIIT</div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="contact-form">
+    <h2>Join Our Gym</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <select id="goal" required>
+        <option value="">-- Select Goal --</option>
+        <option>Weight Loss</option>
+        <option>Muscle Gain</option>
+        <option>General Fitness</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- To-Do List -->
+  <section class="todo-section">
+    <h2>Today's Workout Plan</h2>
+    <input type="text" id="taskInput" placeholder="Add workout (e.g., 20 Pushups)" />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Fitness Quiz -->
+  <section id="quiz" class="quiz-section">
+  <h2>🧠 Test Your Fitness Knowledge</h2>
+  <p id="quiz-question"></p>
+  <ul id="quiz-options"></ul>
+  <button id="next-question" style="display:none;">Next</button>
+  <button id="restart-quiz" style="display:none; margin-top:10px; background-color:#007bff; color:#fff; border:none; padding:8px 14px; border-radius:5px; cursor:pointer;">Restart Quiz</button>
+  <div id="quiz-result" style="display:none;">
+    <strong>Your Score:</strong> <span id="quiz-score"></span>/3
+  </div>
+</section>
+
+
+  <!-- API Fitness Tip -->
+  <section id="tips" class="api-section">
+    <h2>💡 Daily Fitness Daddy Jokes</h2>
+    <p id="api-joke">Loading...</p>
+    <!-- Added button here -->
+    <button id="new-tip-btn" type="button">Get Another Tip</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

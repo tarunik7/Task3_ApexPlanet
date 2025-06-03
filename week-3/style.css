@@ -1,0 +1,168 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  color: goldenrod;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+}
+.navbar h1 {
+  font-size: 28px;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  cursor: pointer;
+  color: goldenrod;
+  font-weight: 600;
+}
+.navbar li:hover {
+  color: #28a745;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+.program-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+  background-color: white;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact-form button {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+#formMessage {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.todo-section {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+.todo-section input {
+  width: 70%;
+  padding: 10px;
+}
+.todo-section button {
+  width: 28%;
+  padding: 10px;
+  margin-left: 2%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ul {
+  margin-top: 15px;
+  padding-left: 0;
+}
+li {
+  list-style: none;
+  background-color: #eee;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+li button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.quiz-section,
+.api-section {
+  background: white;
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.quiz-section ul {
+  padding: 0;
+}
+.quiz-section li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.quiz-section button {
+  margin-top: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .programs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#new-tip-btn {
+  margin-top: 15px;
+  padding: 10px 18px;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+#new-tip-btn:hover {
+  background-color: #28a745;
+}
+
